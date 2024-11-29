@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+}
+.Work{
+    display: flex;
+    width: 100%;
+    min-height: 150vh;
+    background-color: lightblue;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    padding: 0vw 3vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+.left-nav a img {
+    width: 15vw;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.Control-nav {
+    display: flex;
+    gap: 2vw;
+    /* Space between links */
+}
+
+.Control-nav a {
+    text-decoration: none;
+    color: black;
+    /* Adjust as needed */
+    font-size: 1.2vw;
+    padding: 0.7vw 1.5vw;
+    border-radius: 50px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+.Control-nav a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+.active{
+    background-color: #333;
+}
+
+.right-nav button {
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.right-nav button:hover {
+    background-color: white;
+    color: #333;
+}
+.menu-bar {
+    display: none;
+    font-size: 6vw;
+    color: black;
+    margin-top: 5px;
+    margin-left: 210px;
+}
+
+.ri-menu-3-fill {
+    display: none;
+    color: black;
+    font-size: 7vw;
+}
+
+
+.qualification {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 500px !important;
+    margin: 400px;
+    margin-right: 50px;
+}
+.qualification__container{
+    max-width: 768px;
+    width: 100%;
+}
+.qualification__tabs{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2px;
+    display: inline-block;
+    margin-left: 25px;
+
+}
+.qualification__button{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+.qualification__button:hover {
+    background-color: black;
+    color: white;
+}
+.section__title{
+    margin-right: 30%;
+}
+.section__subtitle{
+    margin-right: 30%;
+}
+.qualification__description{
+    font-size: larger;
+    font-weight: 400;
+}
+.qualification__icon{
+    font-size: 1.8rem;
+    margin-right: 25px;
+}
+.qualification__active{
+    color: #333;
+}
+.qualification__section{
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+}
+.qualification__content{
+    display: none;
+}
+.qualification__content-active{
+    display: block;
+    margin: 0px -15%;
+    width: 100%;
+}
+.qualification__data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 2.5rem;
+}
+.qualification__title{
+    font-size:larger;
+    font-weight: 400;
+}
+.qualification__subtitle{
+    display: inline-block;
+    font-size: medium;
+    margin-bottom: 1px;
+}
+.qualification__calender{
+    font-size: small;
+}
+.qualification__rounder{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+}
+.qualification__line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #333;
+    transform: translate(6px , 7px);
+}
+
+
+
+@media screen and (max-width: 786px) {
+    .menu-bar {
+        display: initial;
+    }
+    .ri-menu-3-fill {
+        display: initial;
+    }
+    .Control-nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lavender;
+        gap: 15px;
+        transition: all 0.3s ease-in-out;
+        z-index: -5;
+        
+    }
+    
+    .Control-nav a {
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .right-nav {
+        display: none;
+    }
+
+    .left-nav a img {
+        width: 25vw;
+    }
+}    

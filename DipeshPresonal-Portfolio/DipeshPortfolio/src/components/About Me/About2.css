@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+}
+.About{
+    display: flex;
+    width: 100%;
+    min-height: 150vh;
+    background-color: lightblue;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    padding: 0vw 3vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+.left-nav a img {
+    width: 15vw;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.Control-nav {
+    display: flex;
+    gap: 2vw;
+    /* Space between links */
+}
+
+.Control-nav a {
+    text-decoration: none;
+    color: black;
+    /* Adjust as needed */
+    font-size: 1.2vw;
+    padding: 0.7vw 1.5vw;
+    border-radius: 50px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+.Control-nav a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+.active{
+    background-color: #333;
+}
+
+.right-nav button {
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.right-nav button:hover {
+    background-color: white;
+    color: #333;
+}
+.menu-bar {
+    display: none;
+    font-size: 6vw;
+    color: black;
+    margin-top: 5px;
+    margin-left: 210px;
+}
+
+.ri-menu-3-fill {
+    display: none;
+    color: black;
+    font-size: 7vw;
+}
+
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 100px;
+}
+.hero-img{
+    margin-top: 20px;
+    border-radius: 55%;
+}
+.hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 70px;
+    font-weight: 600;
+}
+.hero h1 span {
+    background-image: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.hero-connect {
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+    cursor: pointer;
+}
+.hero-resume{
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.hero-connect:hover{
+    border: 2px solid  white;
+}
+.hero-resume:hover{
+    border-color: #b415ff;
+}
+
+/*about second section */
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: -50px 70px;
+    min-height: 150vh;
+}
+.about-title{
+    position: relative;
+}
+.about-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.about-sections{
+    display: flex;
+    gap: 80px;
+}
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.about-para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.about-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-skill{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 0.3s;
+}
+.about-skill p{
+    min-width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.about-skill hr{
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+}
+.about-achievements{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.about-achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+.about-achievement h1{
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #df8908 50.41% , #b415ff 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-achievement p{
+    font-size: 22px;
+    font-weight: 500;
+}
+.about-skill:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.about-achievement.hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+@media screen and (max-width: 500px) {
+    .menu-bar {
+        display: initial;
+    }
+    .ri-menu-3-fill {
+        display: initial;
+    }
+    .Control-nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lavender;
+        gap: 15px;
+        transition: all 0.3s ease-in-out;
+        z-index: -5;
+        
+    }
+    
+    .Control-nav a {
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .right-nav {
+        display: none;
+    }
+
+    .left-nav a img {
+        width: 25vw;
+    }
+
+    
+    .hero h1{
+        font-size: 30px;
+    }
+    .hero p{
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .hero-connect{
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .hero-action{
+        padding: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+     
+    .about {
+        flex-direction: column;
+    }
+}    

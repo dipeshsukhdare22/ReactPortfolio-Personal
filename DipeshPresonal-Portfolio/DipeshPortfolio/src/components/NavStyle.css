@@ -1,0 +1,356 @@
+@font-face {
+    font-family: ExtraBold;
+    src: url(../assets/Zuume-ExtraBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Product Sans;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    min-height: 108vh;
+    background-image: url('https://media.giphy.com/media/3oD3YmYjp3Svl4eoYE/giphy.gif?cid=ecf05e47u4y52kycghpclr053kt9vg6t4rxy7idbjq3yw69y&ep=v1_gifs_related&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-clip: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* NavStyle.css */
+nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    padding: 0vw 3vw;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+.left-nav a img {
+    width: 15vw;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.Control-nav {
+    display: flex;
+    gap: 1vw !important;
+    margin-left: -30px !important;
+}
+
+.Control-nav a {
+    text-decoration: none;
+    color: black;
+    /* Adjust as needed */
+    font-size: 1.2vw;
+    padding: 0.7vw 1vw;
+    border-radius: 50px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+.Control-nav a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.active {
+    background-color: #333;
+}
+
+.right-nav button {
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    border-radius: 10px;
+    border: none;
+    margin-right: -7px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.right-nav button:hover {
+    background-color: white;
+    color: #333;
+}
+
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+    gap: 5vh;
+    padding-left: 7vw;
+    padding-top: 3vw;
+}
+
+.left h1 {
+    margin-top: 60px !important;
+    font-size: 10vw;
+    color: transparent;
+    background-image: url('https://media.giphy.com/media/3o7TKzhOn95qqG5o9W/giphy.gif?cid=790b7611kwfx9befgjzgsk3zs98zfunrbp9hfoht5v6uz129&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-clip: text;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    line-height: 15vh;
+    font-family: ExtraBold;
+}
+
+.left p {
+    width: 25vw;
+    color: #333;
+    font-size: 1.5vw;
+}
+
+.btn {
+    display: flex !important;
+    gap: 2vw;
+    background: transparent !important;
+}
+
+.btn button {
+    padding: 1.2vw 2vw;
+    border-radius: 10px;
+    border: none;
+    font-size: 1vw;
+    background-color: #fff;
+}
+
+.btn button:nth-child(1) {
+    background-color: #333;
+    color: #fff;
+    font-size: 1vw;
+}
+
+.right {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right video {
+    width: 80%;
+    margin-left: 50px;
+}
+
+.menu-bar {
+    display: none;
+    font-size: 6vw;
+    color: black;
+    margin-top: 5px;
+    margin-left: 210px;
+}
+
+.ri-menu-3-fill {
+    display: none;
+    color: black;
+    font-size: 7vw;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu-bar {
+        display: initial;
+    }
+
+    .ri-menu-3-fill {
+        display: initial;
+    }
+
+    .Control-nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lavender;
+        gap: 15px;
+        transition: all 0.3s ease-in-out;
+        z-index: -5;
+        display: none;
+
+    }
+
+    .Control-nav a {
+        display: none;
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+    .left-nav a img {
+        width: 28vw;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+
+    .left {
+        align-items: center;
+        width: 100%;
+        padding-left: 0vw;
+        margin-top: 60px !important;
+    }
+
+    .left h1 {
+        margin-top: 5vh !important;
+        font-size: 30vw;
+    }
+
+    .left p {
+        width: 85vw;
+        font-size: 6vw;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .btn button {
+        font-size: 5.5vw;
+        padding: 5vw 15vw;
+    }
+
+    .btn button:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .right {
+        margin-top: 50px;
+        margin-left: -25px;
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 25px;
+    }
+
+    .right video {
+        width: 90% !important;
+        margin-top: -20px;
+        font-size: large;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .menu-bar {
+        display: initial;
+    }
+
+    .ri-menu-3-fill {
+        display: initial;
+    }
+
+    .Control-nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lavender;
+        gap: 15px;
+        transition: all 0.3s ease-in-out;
+        z-index: -5;
+        display: none;
+
+    }
+
+    .Control-nav a {
+        display: none;
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+    .left-nav a img {
+        width: 28vw;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+
+    .left {
+        align-items: center;
+        width: 100%;
+        padding-left: 0vw;
+        margin-top: 60px !important;
+    }
+
+    .left h1 {
+        margin-top: 5vh !important;
+        font-size: 30vw;
+    }
+
+    .left p {
+        width: 85vw;
+        font-size: 6vw;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .btn button {
+        font-size: 5.5vw;
+        padding: 5vw 15vw;
+    }
+
+    .btn button:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .right {
+        margin-top: 50px;
+        margin-left: -25px;
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 25px;
+    }
+
+    .right video {
+        width: 90% !important;
+        margin-top: -20px;
+        font-size: large;
+    }
+}
