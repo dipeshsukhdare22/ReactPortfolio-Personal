@@ -191,7 +191,7 @@ section p {
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .section1 {
     padding: 5vw;
     gap: 3vh;

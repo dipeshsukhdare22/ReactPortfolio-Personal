@@ -167,7 +167,7 @@ nav {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     .menu-bar {
         display: initial;
     }
@@ -207,7 +207,7 @@ nav {
     }
 
     .left-nav a img {
-        width: 28vw;
+        width: 22vw !important;
     }
 
     .main {
@@ -301,7 +301,7 @@ nav {
     }
 
     .left-nav a img {
-        width: 28vw;
+        width: 22vw !important;
     }
 
     .main {

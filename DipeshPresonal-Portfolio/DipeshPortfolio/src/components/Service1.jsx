@@ -63,7 +63,7 @@ const Services = () => {
             lenis.destroy();
         };
     }, []);
-
+    
     return (
         <div className="Service" >
             <section id="services-section">
@@ -139,7 +139,7 @@ const Services = () => {
                 </div>
             </div>
             <Link to="/services">
-                <button id="transparent-button">Explore More Services</button>
+                <button className="transparent-button">Explore More Services</button>
             </Link>
         </div>
     );
