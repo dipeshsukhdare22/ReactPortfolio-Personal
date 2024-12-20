@@ -36,7 +36,7 @@ const Service2 = () => {
     }, []);
 
     return (
-        <div className='Service'>
+        <div className='Services'>
             <nav>
                 <div className='left-nav'>
                     <a href='#'>

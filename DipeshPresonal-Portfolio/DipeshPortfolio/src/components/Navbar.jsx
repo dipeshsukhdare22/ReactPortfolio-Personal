@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaArrowRight, FaTimes } from 'react-icons/fa';
+import { FaArrowRight, FaTimes, FaArrowLeft } from 'react-icons/fa';
 import logoimg from '../assets/logoimg.png';
 import Video from '../assets/video1.webm';
 import './NavStyle.css';
@@ -35,6 +35,7 @@ const Navbar = () => {
       });
   }, []);
 
+
   return (
     <div className='main'>
       <nav>
@@ -52,19 +53,29 @@ const Navbar = () => {
           <Link to="/contact"><h4>Contact Me</h4></Link>
         </div>
         <div className='right-nav'>
-          <button>LET'S TALK <i className="ri-arrow-right-up-line" style={{ marginLeft: '8px' }}></i></button>
+          <a
+            href="https://wa.me/919820821050"
+            target="_blank"
+            className="whatsapp-link"
+          >
+            LET'S TALK <i className="ri-arrow-right-up-line" style={{ marginLeft: '8px' }}></i>
+          </a>
         </div>
-        <div className='right-nav'>
-        <button>
+        <div className='right-nav1'>
+          <a
+            href="https://www.linkedin.com/in/dipeshsukhdare/"
+            target="_blank"
+            className="linkedin-link"
+          >
             Hire Me <i className="ri-corner-down-left-line" style={{ marginLeft: '8px' }}></i>
-          </button>
+          </a>
         </div>
         <div className='menu-bar'><FaTimes />
           <i className="ri-menu-3-fill" height="26" viewBox="0 96 960 960" width="26" ></i>
         </div>
       </nav>
 
-      
+
       <div className='left'>
         <h1>DIPESH <br /> SUKHDARE</h1>
         <p>
@@ -74,7 +85,9 @@ const Navbar = () => {
           <button>
             Get Started <FaArrowRight style={{ marginLeft: '8px' }} />
           </button>
-          <button>Experiences Generator</button>
+          <Link to="/resume">
+            <button>My Resume <FaArrowLeft style={{ marginLeft: '8px' }} /> </button>
+          </Link>
         </div>
       </div>
       <div className='right'>

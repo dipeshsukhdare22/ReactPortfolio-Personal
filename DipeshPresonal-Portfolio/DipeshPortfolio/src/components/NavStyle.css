@@ -71,7 +71,9 @@ nav {
     background-color: #333;
 }
 
-.right-nav button {
+.right-nav a.whatsapp-link {
+    display: inline-block;
+    text-decoration: none;
     padding: 1vw 2vw;
     font-size: 1vw;
     border-radius: 10px;
@@ -79,14 +81,30 @@ nav {
     margin-right: -7px;
     background-color: black;
     color: aliceblue;
+    text-align: center;
 }
 
-.right-nav button:hover {
+.right-nav a.whatsapp-link:hover {
     background-color: white;
     color: #333;
 }
 
+.right-nav1 a.linkedin-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
 
+.right-nav1 a.linkedin-link:hover {
+    background-color: white;
+    color: #333;
+}
 
 .left {
     display: flex;
@@ -130,13 +148,13 @@ nav {
     border-radius: 10px;
     border: none;
     font-size: 1vw;
-    background-color: #fff;
+    background-color: #fff !important;
 }
 
-.btn button:nth-child(1) {
-    background-color: #333;
+.btn a button:nth-child(1) {
+    background-color: #333 !important;
     color: #fff;
-    font-size: 1vw;
+    font-size: 1vw ;
 }
 
 .right {
@@ -205,6 +223,9 @@ nav {
     .right-nav {
         display: none;
     }
+    .right-nav1 {
+        display: none;
+    }
 
     .left-nav a img {
         width: 22vw !important;
@@ -243,7 +264,7 @@ nav {
     }
 
     .btn button:nth-child(1) {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
     .right {
@@ -297,6 +318,9 @@ nav {
     }
 
     .right-nav {
+        display: none;
+    }
+    .right-nav1 {
         display: none;
     }
 

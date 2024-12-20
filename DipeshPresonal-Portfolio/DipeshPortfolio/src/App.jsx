@@ -8,7 +8,6 @@ import Contact from './Pages/Contact';
 
 import "./App.css";
 import { Routes , Route} from 'react-router-dom';
-
 const App = () => {
 
   return (
