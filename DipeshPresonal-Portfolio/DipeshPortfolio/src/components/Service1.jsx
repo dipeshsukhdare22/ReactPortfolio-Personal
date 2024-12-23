@@ -138,7 +138,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <Link to="./services">
+            <Link to="/services">
                 <button className="transparent-button">Explore More Services</button>
             </Link>
         </div>

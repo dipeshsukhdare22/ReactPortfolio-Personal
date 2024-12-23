@@ -1,10 +1,15 @@
 import html from "../work/assets/skills/html.png";
 import css from "../work/assets/skills/css.png";
+import javascript from '../work/assets/skills/javascript.jpeg';
+import bootstrap from '../work/assets/skills/bootstrap.jpeg';
 import react from "../work/assets/skills/react.png";
+import reactbootstrap from '../work/assets/skills/react-bootstrap.png';
+import tailwindcss from '../work/assets/skills/tailwindcss.png';
+import npm from '../work/assets/skills/npm.jpeg';
 import node from "../work/assets/skills/node.png";
-import graph from "../work/assets/skills/graphql.png";
 import mongo from "../work/assets/skills/mongodb.png";
-import figma from "../work/assets/skills/figma.png";
+import phpmysql from '../work/assets/skills/phpmysql.png';
+import gsap from "../work/assets/skills/gsap.jpeg";
 
 import google from "../work/assets/history/google.png";
 import microsoft from "../work/assets/history/microsoft.png";
@@ -21,24 +26,44 @@ export const skills = [
     imageSrc: css,
   },
   {
+    title: "JavaScript",
+    imageSrc: javascript,
+  },
+  {
+    title: "Bootstrap",
+    imageSrc: bootstrap,
+  },
+  {
     title: "React",
     imageSrc: react,
+  },
+  {
+    title: "React-Boot",
+    imageSrc: reactbootstrap,
+  },
+  {
+    title: "TailwindCSS",
+    imageSrc: tailwindcss,
+  },
+  {
+    title: "Npm",
+    imageSrc: npm,
   },
   {
     title: "Node",
     imageSrc: node,
   },
   {
-    title: "GraphQL",
-    imageSrc: graph,
-  },
-  {
     title: "MongoDB",
     imageSrc: mongo,
   },
   {
-    title: "Figma",
-    imageSrc: figma,
+    title: "PhpMysql",
+    imageSrc: phpmysql,
+  },
+  {
+    title: "Gsap",
+    imageSrc: gsap,
   },
 ];
 
@@ -66,6 +91,14 @@ export const history = [
     endDate: "Jun, 2020",
     experiences: ["Worked on component library", "Helped create UI components"],
     imageSrc: netflix,
+  },
+  {
+    role: "Software Engineer",
+    organisation: "Google",
+    startDate: "Sept, 2022",
+    endDate: "Present",
+    experiences: ["Worked on Google Maps", "Reduced load times by 50%"],
+    imageSrc: google,
   },
 ];
 
