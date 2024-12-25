@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Product Sans;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+.Projects{
+    display: flex;
+    width: 100%;
+    min-height: 350vh;
+    background-image: url('https://media.giphy.com/media/3oD3YmYjp3Svl4eoYE/giphy.gif?cid=ecf05e47u4y52kycghpclr053kt9vg6t4rxy7idbjq3yw69y&ep=v1_gifs_related&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-clip: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mainproject{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10vh;
+}
+.text {
+    position: absolute;
+    width: 100%;
+    margin-top: 10% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-img {
+   width: 18vw;
+   height: 7vw;
+   background-image: url('../assets/logoimg.png');
+   background-size: cover;
+   background-position: center;
+   background-clip: initial;
+   background-repeat: no-repeat;
+}
+
+.text h2{
+    font-size: 3vw;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.text p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: rgb(65, 69, 73);
+    text-align: center;
+}
+
+.cards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 50vw;
+}
+
+#card-one {
+    position: relative;
+    top: 28% !important;
+    background-image: url('../assets/Projectimg/landingpage1.png');
+    background-size: cover;
+    background-position: center;
+    background-clip: initial;
+    background-repeat: no-repeat;
+    
+}
+#card-two {
+    position: relative;
+    top: 25% !important;
+    background-image: url('../assets/Projectimg/landingpage2.png');
+    background-size: cover;
+    background-position: center;
+    background-clip: initial;
+    background-repeat: no-repeat;
+}
+#card-three {
+    position: relative;
+    top: 20% !important;
+    background-image: url('../assets/Projectimg/landingpage3.png');
+    background-size: cover;
+    background-position: center;
+    background-clip: initial;
+    background-repeat: no-repeat;
+}
